@@ -36,4 +36,16 @@ The newsletter form is a placeholder — it needs a Mailchimp / Buttondown / Net
 
 ## Publishing
 
-`scripts/build-artifact.sh` strips the HTML wrapper into a scratch copy for the Claude Artifact demo link. For the real site, push this folder as-is to Netlify (drag-and-drop at app.netlify.com/drop) or GitHub Pages.
+**Live site:** https://alpartida.github.io/christine-burke-yoga/ (GitHub Pages, from the `main` branch of `alpartida/christine-burke-yoga`).
+
+To push a change:
+
+```sh
+git add -A
+git commit -m "Add October class dates"
+git push
+```
+
+GitHub rebuilds the site in about a minute. When Christine has a domain (e.g. christineburkeyoga.com), add it under the repo's Settings → Pages → Custom domain and point the domain's DNS at GitHub Pages; the site itself doesn't change.
+
+`scripts/build-artifact.sh` makes the wrapper-stripped copy used for the Claude Artifact review link — not needed for the live site.
