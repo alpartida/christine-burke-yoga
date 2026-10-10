@@ -17,7 +17,7 @@ const SITE = {
 
   email: "christine@liberationyoga.com",
   instagram: "https://www.instagram.com/liberationyoga/",
-  facebook: "https://www.facebook.com/LiberationYoga",     // TODO: confirm
+  facebook: "https://www.facebook.com/LiberationYoga",     // confirmed by Christine (she's not active there)
   venmo: "@christine-burke-7",                             // from the SMHD page on the old site
   podcast: "https://open.spotify.com/show/2lyaKbhmM9ZGaH1FFcdNHY",
 
@@ -27,7 +27,18 @@ const SITE = {
   defaultRegister: "mailto:christine@liberationyoga.com?subject=Class%20registration",
 
   // Where "Book a consultation" goes. A free Calendly link works well here if she wants one.
-  consultation: "mailto:christine@liberationyoga.com?subject=Consultation%20request",
+  consultation: "mailto:christine@liberationyoga.com?subject=Free%2020-minute%20consultation",
+
+  // THE CLASS SCHEDULE SPREADSHEET (optional).
+  // Paste the Google Sheet link here and the site reads the schedule from the
+  // sheet every time the page loads — Christine edits the sheet, nothing else.
+  // Works with either link:
+  //   the normal share link   https://docs.google.com/spreadsheets/d/ABC123/edit#gid=0
+  //     (the sheet must be shared as "Anyone with the link — Viewer")
+  //   or File > Share > Publish to web (CSV)
+  // Leave it as "" and the site uses the SCHEDULE list further down instead.
+  // If the sheet is ever unreachable, the site quietly falls back to that list too.
+  scheduleSheet: "",
 };
 
 /* ------------------------------------------------------------
@@ -54,6 +65,7 @@ const CLASSES = {
    ------------------------------------------------------------ */
 const SCHEDULE = [
   // *** Example dates in Christine's usual pattern — replace with her real list ***
+  // Ignored while SITE.scheduleSheet above has a link in it (except as a fallback).
   { date: "2026-09-22", time: "9:30 – 10:45 AM", title: "Morning Magic" },
   { date: "2026-09-24", time: "9:30 – 10:45 AM", title: "Morning Magic" },
   { date: "2026-09-26", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
@@ -122,6 +134,9 @@ const RATES = [
 
 /* ------------------------------------------------------------
    KIND WORDS
+   Add  section: "classes" | "coaching" | "retreats" | "smhd"  to a quote
+   and it also appears beside that part of the page. Quotes with no
+   section only appear here in Kind words.
    ------------------------------------------------------------ */
 const TESTIMONIALS = [
   {
@@ -131,9 +146,20 @@ const TESTIMONIALS = [
   {
     quote: "Christine meets you exactly where you are and somehow gets you somewhere you didn't know you could go.",
     who: "A longtime student",   // TODO: placeholder — replace with real student quotes
+    section: "classes",
   },
   {
     quote: "Yoga can only approach healing if you're in the right space. You should feel relaxed, safe, comfortable, and like you're inhabiting postures, not forcing them.",
     who: "Christine, on teaching with injuries",
   },
+];
+
+/* ------------------------------------------------------------
+   PAST RETREAT PHOTOS
+   Photos from retreats that have already happened. Drop the image files
+   into the images/ folder and add a line each. Caption is optional.
+   The whole section hides itself while this list is empty.
+   ------------------------------------------------------------ */
+const RETREAT_PHOTOS = [
+  // { src: "images/retreat-costa-rica-1.jpg", caption: "Costa Rica, 2024" },
 ];
