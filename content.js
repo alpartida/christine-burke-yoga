@@ -66,15 +66,17 @@ const CLASSES = {
 const SCHEDULE = [
   // *** Example dates in Christine's usual pattern — replace with her real list ***
   // Ignored while SITE.scheduleSheet above has a link in it (except as a fallback).
-  { date: "2026-09-22", time: "9:30 – 10:45 AM", title: "Morning Magic" },
-  { date: "2026-09-24", time: "9:30 – 10:45 AM", title: "Morning Magic" },
-  { date: "2026-09-26", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
-  { date: "2026-09-29", time: "9:30 – 10:45 AM", title: "Morning Magic" },
-  { date: "2026-10-01", time: "9:30 – 10:45 AM", title: "Morning Magic" },
-  { date: "2026-10-03", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
-  { date: "2026-10-06", time: "9:00 – 10:15 AM", title: "Morning Magic" },
-  { date: "2026-10-08", time: "9:30 – 10:45 AM", title: "Morning Magic" },
-  { date: "2026-10-10", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
+  { date: "2026-10-15", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-10-17", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
+  { date: "2026-10-20", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-10-22", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-10-24", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
+  { date: "2026-10-27", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-10-29", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-10-31", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
+  { date: "2026-11-03", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-11-05", time: "9:30 – 10:45 AM", title: "Morning Magic" },
+  { date: "2026-11-07", time: "10:15 – 11:30 AM", title: "Vitality Flow" },
 ];
 
 // Shown on every class unless the line sets its own price.
